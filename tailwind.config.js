@@ -1,6 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./pages/**/*.{js,jsx}", "./components/**/*.{js,jsx}"],
-  theme: { extend: { colors: { brandNavy: "#0B1D39", brandGold: "#FFD369", brandTeal: "#14B8A6" } } },
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+ 
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        brandTeal: '#00D1FF',
+        brandGold: '#FFD100',
+      },
+    },
+  },
   plugins: [],
-};
+}
+
