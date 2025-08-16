@@ -106,7 +106,7 @@ export default function Home() {
             <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
               {[
                  { name: "SQL", img: "/images/skills/10132-icon-service-SQL-Server.svg" },
-  { name: "PySpark", img: "/images/skills/python-logo-only.svg" },
+  { name: "Spark", img: "/images/skills/apache_spark_logo_icon_170561.svg" },
   { name: "Python", img: "/images/skills/python-logo-only.svg" },
 
   // Big Data & Cloud
@@ -116,22 +116,16 @@ export default function Home() {
   { name: "Synapse", img: "/images/skills/00606-icon-service-Azure-Synapse-Analytics.svg" },
   { name: "ADLS Gen2", img: "/images/skills/10126-icon-service-Data-Factories.svg" }, // Azure Data Lake is an Azure service
 
-  // Modeling & ETL
-  { name: "Data Vault 2.0", img: "/images/skills/10126-icon-service-Data-Factories.svg" }, // Using a generic Azure/Data Factory icon
-  { name: "Star Schema", img: "/images/skills/03332-icon-service-Power-BI-Embedded.svg" }, // Associated with BI/Data Warehousing
-  { name: "Dataflows", img: "/images/skills/03332-icon-service-Power-BI-Embedded.svg" },
-  { name: "Databricks Notebooks", img: "/images/skills/10787-icon-service-Azure-Databricks.svg" },
+  
 
   // CI/CD & Versioning
-  { name: "Azure DevOps", img: "/images/skills/10126-icon-service-Data-Factories.svg" }, // Using a generic Azure icon
-  { name: "Git", img: "/skills/git.png" },
-  { name: "Bitbucket", img: "/skills/bitbucket.png" },
 
-  // Monitoring & Ops
-  { name: "Azure Monitor", img: "/images/skills/10126-icon-service-Data-Factories.svg" }, // Using a generic Azure icon
-  { name: "PowerShell", img: "/skills/powershell.png" },
-  { name: "ServiceNow", img: "https://placehold.co/64x64/2a66c4/ffffff?text=SN" }, // Placeholder for a generic icon
-  { name: "DataDog", img: "https://placehold.co/64x64/632596/ffffff?text=DD" }, // Placeholder for a generic icon
+  { name: "Github", img: "/skills/github-mark.svg" },
+  { name: "Bitbucket", img: "/skills/4373267_bitbucket_logo_logos_icon.svg" },
+
+  // Monitoring & Ops // Using a generic Azure icon
+  { name: "ServiceNow", img: "/skills/ServiceNow_idno3ayWVM_0.svg" }, // Placeholder for a generic icon
+  { name: "DataDog", img: "/skills/dd_icon_rgb.svg" }, // Placeholder for a generic icon
 
   // Visualization
   { name: "Power BI", img: "/skills/powerbi.png" },
