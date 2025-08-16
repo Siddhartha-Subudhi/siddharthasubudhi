@@ -17,6 +17,8 @@ export default function Header(){
           <span className="font-semibold">Siddhartha Subudhi</span>
         </a>
         <nav className="hidden md:flex items-center gap-6 text-sm text-slate-200/90">
+          <a href="#about" className="hover:text-white">About</a>
+          <a href="#skills" className="hover:text-white">Skills</a>
           <a href="#services" className="hover:text-white">Services</a>
           <a href="#work" className="hover:text-white">Case Studies</a>
           <a href="#learn" className="hover:text-white">Learn</a>
