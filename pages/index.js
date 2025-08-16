@@ -7,7 +7,7 @@ import Button from "../components/Button";
 import Blogs from "../components/Blogs";
 import Learn from "../components/Learn";
 
-import { Mail, CalendarCheck2, BookOpen, Linkedin, Github } from "lucide-react";
+import { Mail, CalendarCheck2, BookOpen, Linkedin, Github  } from "lucide-react";
 
 export default function Home() {
   return (
@@ -120,15 +120,15 @@ export default function Home() {
 
   // CI/CD & Versioning
 
-  { name: "Github", img: "/skills/github-mark.svg" },
-  { name: "Bitbucket", img: "/skills/4373267_bitbucket_logo_logos_icon.svg" },
+  { name: "Github", img: "/images/skills/github-mark.svg" },
+  { name: "Bitbucket", img: "/images/skills/4373267_bitbucket_logo_logos_icon.svg" },
 
   // Monitoring & Ops // Using a generic Azure icon
-  { name: "ServiceNow", img: "/skills/ServiceNow_idno3ayWVM_0.svg" }, // Placeholder for a generic icon
-  { name: "DataDog", img: "/skills/dd_icon_rgb.svg" }, // Placeholder for a generic icon
+  { name: "ServiceNow", img: "/images/skills/ServiceNow_idno3ayWVM_0.svg" }, // Placeholder for a generic icon
+  { name: "DataDog", img: "/images/skills/dd_icon_rgb.svg" }, // Placeholder for a generic icon
 
   // Visualization
-  { name: "Power BI", img: "/skills/powerbi.png" },
+  { name: "Power BI", img: "/images/skills/03332-icon-service-Power-BI-Embedded.svg" },
 
   // Additional Skills from a previous list
   { name: "Microsoft Fabric", img: "/images/skills/Fabric_256.svg" },
