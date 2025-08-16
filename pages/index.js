@@ -105,30 +105,30 @@ export default function Home() {
             <h2 className="mt-2 text-3xl font-bold">What I Work With</h2>
             <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
               {[
-                 { name: "SQL", img: "./images/skills/10132-icon-service-SQL-Server.svg" },
-  { name: "PySpark", img: "images/skills/python-logo-only.svg" },
-  { name: "Python", img: "images/skills/python-logo-only.svg" },
+                 { name: "SQL", img: "/images/skills/10132-icon-service-SQL-Server.svg" },
+  { name: "PySpark", img: "/images/skills/python-logo-only.svg" },
+  { name: "Python", img: "/images/skills/python-logo-only.svg" },
 
   // Big Data & Cloud
-  { name: "Azure Databricks", img: "images/skills/10787-icon-service-Azure-Databricks.svg" },
-  { name: "ADF", img: "images/skills/10126-icon-service-Data-Factories.svg" },
-  { name: "Delta Lake", img: "images/skills/10787-icon-service-Azure-Databricks.svg" }, // Often associated with Databricks
-  { name: "Synapse", img: "images/skills/00606-icon-service-Azure-Synapse-Analytics.svg" },
-  { name: "ADLS Gen2", img: "images/skills/10126-icon-service-Data-Factories.svg" }, // Azure Data Lake is an Azure service
+  { name: "Azure Databricks", img: "/images/skills/10787-icon-service-Azure-Databricks.svg" },
+  { name: "ADF", img: "/images/skills/10126-icon-service-Data-Factories.svg" },
+  { name: "Delta Lake", img: "/images/skills/10787-icon-service-Azure-Databricks.svg" }, // Often associated with Databricks
+  { name: "Synapse", img: "/images/skills/00606-icon-service-Azure-Synapse-Analytics.svg" },
+  { name: "ADLS Gen2", img: "/images/skills/10126-icon-service-Data-Factories.svg" }, // Azure Data Lake is an Azure service
 
   // Modeling & ETL
-  { name: "Data Vault 2.0", img: "images/skills/10126-icon-service-Data-Factories.svg" }, // Using a generic Azure/Data Factory icon
-  { name: "Star Schema", img: "images/skills/03332-icon-service-Power-BI-Embedded.svg" }, // Associated with BI/Data Warehousing
-  { name: "Dataflows", img: "images/skills/03332-icon-service-Power-BI-Embedded.svg" },
-  { name: "Databricks Notebooks", img: "images/skills/10787-icon-service-Azure-Databricks.svg" },
+  { name: "Data Vault 2.0", img: "/images/skills/10126-icon-service-Data-Factories.svg" }, // Using a generic Azure/Data Factory icon
+  { name: "Star Schema", img: "/images/skills/03332-icon-service-Power-BI-Embedded.svg" }, // Associated with BI/Data Warehousing
+  { name: "Dataflows", img: "/images/skills/03332-icon-service-Power-BI-Embedded.svg" },
+  { name: "Databricks Notebooks", img: "/images/skills/10787-icon-service-Azure-Databricks.svg" },
 
   // CI/CD & Versioning
-  { name: "Azure DevOps", img: "images/skills/10126-icon-service-Data-Factories.svg" }, // Using a generic Azure icon
+  { name: "Azure DevOps", img: "/images/skills/10126-icon-service-Data-Factories.svg" }, // Using a generic Azure icon
   { name: "Git", img: "/skills/git.png" },
   { name: "Bitbucket", img: "/skills/bitbucket.png" },
 
   // Monitoring & Ops
-  { name: "Azure Monitor", img: "images/skills/10126-icon-service-Data-Factories.svg" }, // Using a generic Azure icon
+  { name: "Azure Monitor", img: "/images/skills/10126-icon-service-Data-Factories.svg" }, // Using a generic Azure icon
   { name: "PowerShell", img: "/skills/powershell.png" },
   { name: "ServiceNow", img: "https://placehold.co/64x64/2a66c4/ffffff?text=SN" }, // Placeholder for a generic icon
   { name: "DataDog", img: "https://placehold.co/64x64/632596/ffffff?text=DD" }, // Placeholder for a generic icon
@@ -137,9 +137,9 @@ export default function Home() {
   { name: "Power BI", img: "/skills/powerbi.png" },
 
   // Additional Skills from a previous list
-  { name: "Microsoft Fabric", img: "images/skills/Fabric_256.svg" },
-  { name: "Apache Airflow", img: "images/skills/Apache Airflow.svg" },
-  { name: "Docker", img: "images/skills/Docker.svg" },
+  { name: "Microsoft Fabric", img: "/images/skills/Fabric_256.svg" },
+  { name: "Apache Airflow", img: "/images/skills/Apache Airflow.svg" },
+  { name: "Docker", img: "/images/skills/Docker.svg" },
               ].map((skill) => (
                 <div
                   key={skill.name}
