@@ -1,34 +1,37 @@
-import nodemailer from "nodemailer";
+// pages/api/contact.js
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(req, res) {
-  if (req.method !== "POST") return res.status(405).end("Method not allowed");
-  const body = req.body || {};
-  const name = body.name || (body.get && body.get('name'));
-  const email = body.email || (body.get && body.get('email'));
-  const message = body.message || (body.get && body.get('message'));
-  if(!name || !email || !message) return res.status(400).json({ error: "Missing fields" });
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method not allowed" });
+  }
 
-  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, TO_EMAIL } = process.env;
-  if(!SMTP_HOST || !SMTP_USER || !SMTP_PASS || !TO_EMAIL) {
-    console.error('SMTP env missing');
-    return res.status(500).json({ error: "Email not configured." });
+  const { name, email, message } = req.body;
+
+  if (!name || !email || !message) {
+    return res.status(400).json({ error: "All fields are required" });
   }
 
   try {
-    const transporter = nodemailer.createTransport({
-      host: SMTP_HOST, port: parseInt(SMTP_PORT||"587"), secure: SMTP_PORT=="465",
-      auth: { user: SMTP_USER, pass: SMTP_PASS }
+    await resend.emails.send({
+      from: "Portfolio Contact <onboarding@resend.dev>", // Resend requires verified sender
+      to: process.env.TO_EMAIL,
+      subject: `New message from ${name}`,
+      reply_to: email,
+      html: `
+        <h2>New Contact Message</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message.replace(/\n/g, "<br/>")}</p>
+      `,
     });
-    await transporter.sendMail({
-      from: `"Website Contact" <${SMTP_USER}>`,
-      to: TO_EMAIL,
-      subject: `New message from ${name} <${email}>`,
-      text: message,
-      html: `<p><strong>From:</strong> ${name} &lt;${email}&gt;</p><p>${message.replace(/\n/g,'<br/>')}</p>`
-    });
-    return res.status(200).json({ ok: true });
-  } catch(err){
-    console.error(err);
-    return res.status(500).json({ error: "Failed to send" });
+
+    return res.status(200).json({ success: true, message: "Email sent successfully!" });
+  } catch (error) {
+    console.error("Resend error:", error);
+    return res.status(500).json({ error: "Failed to send message" });
   }
 }
