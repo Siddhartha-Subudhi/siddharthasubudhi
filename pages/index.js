@@ -87,11 +87,10 @@ export default function Home() {
             </h3>
             <h2 className="mt-2 text-3xl font-bold">Who I Am</h2>
             <p className="mt-4 text-slate-300/90 leading-relaxed">
-              I’m Siddhartha Subudhi, a Data Engineer with 20+ years of
+              I’m Siddhartha Subudhi, a Data Engineer with 6+ years of
               experience designing and scaling data platforms. My expertise lies
               in Databricks, Azure, PySpark, and modern ETL frameworks. Beyond
-              engineering, I mentor aspiring professionals to crack top product
-              company interviews.
+              engineering, I’m passionate about mentoring professionals to grow in their data careers and build strong foundations in modern data systems.
             </p>
           </div>
         </section>
