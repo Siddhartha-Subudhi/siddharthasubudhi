@@ -16,7 +16,7 @@ export default function Home() {
         <title>Siddhartha Subudhi — Data Engineer & Mentor</title>
         <meta
           name="description"
-          content="Siddhartha Subudhi — Data Engineer. Azure, Databricks, PySpark, Lakehouse Architect. Hire or Learn."
+          content="Siddhartha Subudhi — Data Engineer & Mentor. Azure, Databricks, PySpark, and Lakehouse Architecture for modern data platforms."
         />
       </Head>
 
@@ -43,11 +43,11 @@ export default function Home() {
                 1:1 mentorship.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <a href="#contact">
-                  <Button>
-                    Hire Me <CalendarCheck2 size={16} />
-                  </Button>
-                </a>
+                // <a href="#contact">
+                //   <Button>
+                //     Hire Me <CalendarCheck2 size={16} />
+                //   </Button>
+                // </a>
                 <a href="#learn">
                   <Button variant="ghost">
                     Start Learning <BookOpen size={16} />
@@ -157,7 +157,7 @@ export default function Home() {
             <h3 className="text-sm uppercase tracking-widest text-brandTeal/90">
               Services
             </h3>
-            <h2 className="mt-2 text-3xl font-bold">Hire me to move the KPIs</h2>
+            <h2 className="mt-2 text-3xl font-bold">Projects & Expertise</h2>
             <div className="mt-6 grid gap-6 md:grid-cols-2">
               <Card>
                 <h3 className="text-xl font-semibold text-amber-300">
