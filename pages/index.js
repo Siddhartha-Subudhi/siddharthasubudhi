@@ -43,11 +43,11 @@ export default function Home() {
                 1:1 mentorship.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                // <a href="#contact">
-                //   <Button>
-                //     Hire Me <CalendarCheck2 size={16} />
-                //   </Button>
-                // </a>
+                {/* <a href="#contact">
+                  <Button>
+                    Hire Me <CalendarCheck2 size={16} />
+                  </Button>
+                </a> */}
                 <a href="#learn">
                   <Button variant="ghost">
                     Start Learning <BookOpen size={16} />
